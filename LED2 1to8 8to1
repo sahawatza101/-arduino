@@ -1,0 +1,24 @@
+
+void setup()
+{
+ 
+  for(int i=2;i<=9;i++){
+    digitalWrite(i,HIGH);
+  }
+}
+
+void loop()
+{
+  for (int i=2;i<=9;i++)
+  {
+    pinMode(i,HIGH);
+    delay(500);
+    pinMode(i,LOW);
+  }
+  for (int j=9;j>=2;j--)
+  {
+    pinMode(j,HIGH);
+    delay(500);
+    pinMode(j,LOW);
+  }
+}
